@@ -1,0 +1,8 @@
+.page { max-width: 800px; }
+.title { font-size: 1.75rem; font-weight: 700; color: #111827; margin-bottom: 0.25rem; }
+.subtitle { color: #6b7280; font-size: 0.95rem; margin-bottom: 2rem; }
+.placeholderGrid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 1rem; }
+.card { background: #fff; border: 1px solid #e5e7eb; border-radius: 10px; overflow: hidden; }
+.cardImage { height: 120px; background: linear-gradient(135deg, #e5e7eb 0%, #d1d5db 100%); }
+.cardLines { padding: 0.75rem; display: flex; flex-direction: column; gap: 0.5rem; }
+.line { height: 10px; border-radius: 4px; background: #e5e7eb; }

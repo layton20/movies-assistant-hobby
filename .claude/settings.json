@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(dotnet test *)",
+      "Bash(dotnet user-secrets *)",
+      "Bash(dotnet build *)",
+      "Bash(python3 -)",
+      "Bash(ruby -ryaml -e 'puts YAML.load_file\\(\"tests/search.yaml\"\\).length')"
+    ]
+  }
+}

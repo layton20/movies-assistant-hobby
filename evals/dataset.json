@@ -1,0 +1,399 @@
+[
+    {
+        "id": 1,
+        "title": "Inception",
+        "year": 2010,
+        "genres": [
+            "Thriller",
+            "Sci-Fi",
+            "Action"
+        ],
+        "rating": 8.8,
+        "director": "Christopher Nolan",
+        "cast": [
+            "Leonardo DiCaprio",
+            "Joseph Gordon-Levitt",
+            "Elliot Page",
+            "Tom Hardy"
+        ],
+        "description": "A skilled thief who enters people's dreams to steal secrets is given a chance to have his criminal record erased if he can successfully plant an idea into a target's subconscious.",
+        "runtimeMinutes": 148
+    },
+    {
+        "id": 2,
+        "title": "The Dark Knight",
+        "year": 2008,
+        "genres": [
+            "Action",
+            "Crime",
+            "Drama"
+        ],
+        "rating": 9.0,
+        "director": "Christopher Nolan",
+        "cast": [
+            "Christian Bale",
+            "Heath Ledger",
+            "Aaron Eckhart",
+            "Maggie Gyllenhaal"
+        ],
+        "description": "Batman faces the Joker, a criminal mastermind who plunges Gotham City into anarchy, forcing the hero to question everything he stands for.",
+        "runtimeMinutes": 152
+    },
+    {
+        "id": 3,
+        "title": "Parasite",
+        "year": 2019,
+        "genres": [
+            "Thriller",
+            "Drama",
+            "Comedy"
+        ],
+        "rating": 8.5,
+        "director": "Bong Joon-ho",
+        "cast": [
+            "Song Kang-ho",
+            "Lee Sun-kyun",
+            "Cho Yeo-jeong",
+            "Choi Woo-shik"
+        ],
+        "description": "A poor family schemes to become employed by a wealthy family, with each member posing as an unrelated skilled individual. Tension escalates as their deception grows.",
+        "runtimeMinutes": 132
+    },
+    {
+        "id": 4,
+        "title": "Interstellar",
+        "year": 2014,
+        "genres": [
+            "Sci-Fi",
+            "Adventure",
+            "Drama"
+        ],
+        "rating": 8.7,
+        "director": "Christopher Nolan",
+        "cast": [
+            "Matthew McConaughey",
+            "Anne Hathaway",
+            "Jessica Chastain",
+            "Michael Caine"
+        ],
+        "description": "A team of explorers travel through a wormhole in space in an attempt to ensure humanity's survival as Earth becomes uninhabitable.",
+        "runtimeMinutes": 169
+    },
+    {
+        "id": 5,
+        "title": "Get Out",
+        "year": 2017,
+        "genres": [
+            "Horror",
+            "Thriller",
+            "Mystery"
+        ],
+        "rating": 7.7,
+        "director": "Jordan Peele",
+        "cast": [
+            "Daniel Kaluuya",
+            "Allison Williams",
+            "Bradley Whitford",
+            "Catherine Keener"
+        ],
+        "description": "A young Black man visits his white girlfriend's family estate, where he gradually uncovers a disturbing secret.",
+        "runtimeMinutes": 104
+    },
+    {
+        "id": 6,
+        "title": "Everything Everywhere All at Once",
+        "year": 2022,
+        "genres": [
+            "Sci-Fi",
+            "Comedy",
+            "Action",
+            "Drama"
+        ],
+        "rating": 7.8,
+        "director": "Daniel Kwan",
+        "cast": [
+            "Michelle Yeoh",
+            "Ke Huy Quan",
+            "Jamie Lee Curtis",
+            "Stephanie Hsu"
+        ],
+        "description": "A middle-aged Chinese-American laundromat owner must connect with parallel universe versions of herself to prevent a powerful being from destroying the multiverse.",
+        "runtimeMinutes": 139
+    },
+    {
+        "id": 7,
+        "title": "The Shawshank Redemption",
+        "year": 1994,
+        "genres": [
+            "Drama"
+        ],
+        "rating": 9.3,
+        "director": "Frank Darabont",
+        "cast": [
+            "Tim Robbins",
+            "Morgan Freeman",
+            "Bob Gunton",
+            "William Sadler"
+        ],
+        "description": "A banker convicted of murder forms a friendship with a fellow prisoner while maintaining hope for his eventual freedom.",
+        "runtimeMinutes": 142
+    },
+    {
+        "id": 8,
+        "title": "Hereditary",
+        "year": 2018,
+        "genres": [
+            "Horror",
+            "Drama",
+            "Mystery"
+        ],
+        "rating": 7.3,
+        "director": "Ari Aster",
+        "cast": [
+            "Toni Collette",
+            "Gabriel Byrne",
+            "Milly Shapiro",
+            "Alex Wolff"
+        ],
+        "description": "After the death of their secretive grandmother, a family begins to unravel disturbing secrets about their ancestry, leading to terrifying consequences.",
+        "runtimeMinutes": 127
+    },
+    {
+        "id": 9,
+        "title": "Whiplash",
+        "year": 2014,
+        "genres": [
+            "Drama",
+            "Music"
+        ],
+        "rating": 8.5,
+        "director": "Damien Chazelle",
+        "cast": [
+            "Miles Teller",
+            "J.K. Simmons",
+            "Paul Reiser",
+            "Melissa Benoist"
+        ],
+        "description": "A young drummer enrolls at a prestigious music conservatory where he falls under the wing of a ruthless and abusive instructor.",
+        "runtimeMinutes": 106
+    },
+    {
+        "id": 10,
+        "title": "The Lighthouse",
+        "year": 2019,
+        "genres": [
+            "Horror",
+            "Drama",
+            "Mystery"
+        ],
+        "rating": 7.5,
+        "director": "Robert Eggers",
+        "cast": [
+            "Willem Dafoe",
+            "Robert Pattinson"
+        ],
+        "description": "Two lighthouse keepers struggle to maintain their sanity while living on a remote and mysterious New England island in the 1890s.",
+        "runtimeMinutes": 109
+    },
+    {
+        "id": 11,
+        "title": "Mad Max: Fury Road",
+        "year": 2015,
+        "genres": [
+            "Action",
+            "Adventure",
+            "Sci-Fi"
+        ],
+        "rating": 8.1,
+        "director": "George Miller",
+        "cast": [
+            "Tom Hardy",
+            "Charlize Theron",
+            "Nicholas Hoult",
+            "Hugh Keays-Byrne"
+        ],
+        "description": "In a post-apocalyptic wasteland, a woman rebels against a tyrannical ruler in search of her homeland with the aid of a group of female prisoners and a drifter.",
+        "runtimeMinutes": 120
+    },
+    {
+        "id": 12,
+        "title": "Knives Out",
+        "year": 2019,
+        "genres": [
+            "Mystery",
+            "Comedy",
+            "Crime",
+            "Drama"
+        ],
+        "rating": 7.9,
+        "director": "Rian Johnson",
+        "cast": [
+            "Daniel Craig",
+            "Chris Evans",
+            "Ana de Armas",
+            "Jamie Lee Curtis"
+        ],
+        "description": "A detective investigates the death of the patriarch of an eccentric, combative family after a mysterious stranger calls into question who really killed him.",
+        "runtimeMinutes": 130
+    },
+    {
+        "id": 13,
+        "title": "Arrival",
+        "year": 2016,
+        "genres": [
+            "Sci-Fi",
+            "Drama",
+            "Mystery"
+        ],
+        "rating": 7.9,
+        "director": "Denis Villeneuve",
+        "cast": [
+            "Amy Adams",
+            "Jeremy Renner",
+            "Forest Whitaker",
+            "Michael Stuhlbarg"
+        ],
+        "description": "A linguist works with the military to communicate with alien lifeforms after twelve mysterious spacecraft appear around the world.",
+        "runtimeMinutes": 116
+    },
+    {
+        "id": 14,
+        "title": "Midsommar",
+        "year": 2019,
+        "genres": [
+            "Horror",
+            "Drama",
+            "Mystery"
+        ],
+        "rating": 7.1,
+        "director": "Ari Aster",
+        "cast": [
+            "Florence Pugh",
+            "Jack Reynor",
+            "Vilhelm Blomgren",
+            "William Jackson Harper"
+        ],
+        "description": "A couple travels to Sweden to visit a midsummer festival that only takes place every 90 years. What begins as an idyllic retreat quickly devolves into something sinister.",
+        "runtimeMinutes": 148
+    },
+    {
+        "id": 15,
+        "title": "The Grand Budapest Hotel",
+        "year": 2014,
+        "genres": [
+            "Comedy",
+            "Drama",
+            "Adventure"
+        ],
+        "rating": 8.1,
+        "director": "Wes Anderson",
+        "cast": [
+            "Ralph Fiennes",
+            "Tony Revolori",
+            "Saoirse Ronan",
+            "F. Murray Abraham"
+        ],
+        "description": "The adventures of a legendary concierge at a famous European hotel between the wars and his friendship with a young employee who becomes his trusted protégé.",
+        "runtimeMinutes": 99
+    },
+    {
+        "id": 16,
+        "title": "Oppenheimer",
+        "year": 2023,
+        "genres": [
+            "Drama",
+            "History",
+            "Thriller"
+        ],
+        "rating": 8.9,
+        "director": "Christopher Nolan",
+        "cast": [
+            "Cillian Murphy",
+            "Emily Blunt",
+            "Robert Downey Jr.",
+            "Matt Damon"
+        ],
+        "description": "The story of J. Robert Oppenheimer and his role in the development of the atomic bomb during World War II, and the consequences that followed.",
+        "runtimeMinutes": 180
+    },
+    {
+        "id": 17,
+        "title": "A Quiet Place",
+        "year": 2018,
+        "genres": [
+            "Horror",
+            "Sci-Fi",
+            "Drama"
+        ],
+        "rating": 7.5,
+        "director": "John Krasinski",
+        "cast": [
+            "Emily Blunt",
+            "John Krasinski",
+            "Millicent Simmonds",
+            "Noah Jupe"
+        ],
+        "description": "A family struggles to survive in a post-apocalyptic world inhabited by blind monsters with an acute sense of hearing.",
+        "runtimeMinutes": 90
+    },
+    {
+        "id": 18,
+        "title": "Dune",
+        "year": 2021,
+        "genres": [
+            "Sci-Fi",
+            "Adventure",
+            "Drama"
+        ],
+        "rating": 8.0,
+        "director": "Denis Villeneuve",
+        "cast": [
+            "Timothée Chalamet",
+            "Rebecca Ferguson",
+            "Oscar Isaac",
+            "Zendaya"
+        ],
+        "description": "A noble family becomes embroiled in a war for control over the galaxy's most valuable asset, a spice capable of unlocking humanity's greatest potential.",
+        "runtimeMinutes": 155
+    },
+    {
+        "id": 19,
+        "title": "The Witch",
+        "year": 2015,
+        "genres": [
+            "Horror",
+            "Drama",
+            "Mystery"
+        ],
+        "rating": 6.9,
+        "director": "Robert Eggers",
+        "cast": [
+            "Anya Taylor-Joy",
+            "Ralph Ineson",
+            "Kate Dickie",
+            "Harvey Scrimshaw"
+        ],
+        "description": "A Puritan family in 1630s New England encounters forces of evil in the woods beyond their farm, leading to paranoia, accusations, and tragic consequences.",
+        "runtimeMinutes": 93
+    },
+    {
+        "id": 20,
+        "title": "Annihilation",
+        "year": 2018,
+        "genres": [
+            "Sci-Fi",
+            "Horror",
+            "Adventure"
+        ],
+        "rating": 6.9,
+        "director": "Alex Garland",
+        "cast": [
+            "Natalie Portman",
+            "Jennifer Jason Leigh",
+            "Gina Rodriguez",
+            "Tessa Thompson"
+        ],
+        "description": "A biologist signs up for a dangerous, secret expedition into a mysterious zone where the laws of nature don't apply.",
+        "runtimeMinutes": 115
+    }
+]

@@ -378,6 +378,21 @@ ASALocalRun/
 
 # MSBuild Binary and Structured Log
 *.binlog
+
+# Frontend build output
+**/dist/
+**/dist-ssr/
+
+# Local credentials and settings
+.env
+.env.*
+!.env.example
+*.local
+**/appsettings.*.local.json
+
+# OS and editor files
+.DS_Store
+.idea/
 MSBuild_Logs/
 
 # AWS SAM Build and Temporary Artifacts folder

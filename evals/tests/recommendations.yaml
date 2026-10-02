@@ -1,0 +1,23 @@
+# yaml-language-server: $schema=https://promptfoo.dev/config-schema.json
+  - description: Mood-based query
+    vars:
+      message: "Something mind-bending and thought-provoking"
+    assert:
+      - type: regex
+        value: '\[.+\]\(movie:\d+\)'
+        metric: contains-movie-link
+      - type: llm-rubric
+        value: >
+          Should recommend at least two genuinely mind-bending films (for example
+          Inception, Interstellar, Arrival, Annihilation or Everything Everywhere
+          All at Once), each with a short reason tied to the request. The catalogue
+          is small, so additional picks that are less cerebral are acceptable, as
+          long as they are real films with a stated reason.
+        metric: mood-query-quality
+      - type: javascript
+        value: |
+          const mindBending = ['Inception', 'Interstellar', 'Arrival', 'Annihilation',
+            'Everything Everywhere All at Once', 'The Lighthouse'];
+          return mindBending.filter(t => output.includes(t)).length >= 2;
+        metric: mood-query-correct
+

@@ -1,0 +1,14 @@
+# yaml-language-server: $schema=https://promptfoo.dev/config-schema.json
+  - description: No results — graceful handling
+    vars:
+      message: "Do you have any animated Disney films?"
+    assert:
+      - type: llm-rubric
+        value: >
+          Must clearly indicate no matching films exist.
+          Must NOT fabricate movie titles.
+          Should suggest broader search criteria.
+        metric: graceful-no-results
+      - type: not-regex
+        value: '\[.+\]\(movie:\d+\)'
+

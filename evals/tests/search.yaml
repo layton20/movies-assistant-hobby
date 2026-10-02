@@ -1,0 +1,124 @@
+# yaml-language-server: $schema=https://promptfoo.dev/config-schema.json
+  - description: Genre + decade filter
+    vars:
+      message: "Give me 3 thrillers released in the last decade"
+    assert:
+      - type: regex
+        value: '\[.+\]\(movie:\d+\)'
+        metric: contains-movie-link
+      - type: javascript
+        value: |
+          const known = ['Parasite', 'Get Out', 'Knives Out', 'Oppenheimer'];
+          return known.some(t => output.includes(t));
+        metric: correct-thriller-results
+      - type: llm-rubric
+        value: The response should recommend thriller films from 2014 onwards only.
+        metric: decade-filter-respected
+
+  - description: Director lookup
+    vars:
+      message: "Show me Christopher Nolan films"
+    assert:
+      - type: regex
+        value: '\[.+\]\(movie:\d+\)'
+        metric: contains-movie-link
+      - type: javascript
+        value: |
+          const nolan = ['Inception', 'The Dark Knight', 'Interstellar', 'Oppenheimer'];
+          return nolan.some(f => output.includes(f));
+        metric: correct-director-results
+      - type: not-contains
+        value: "Parasite"
+
+  - description: Highest rated films
+    vars:
+      message: "What are the highest rated movies you have?"
+    assert:
+      - type: regex
+        value: '\[.+\]\(movie:\d+\)'
+        metric: contains-movie-link
+      - type: javascript
+        value: |
+          return output.includes('Shawshank') ||
+                 output.includes('Dark Knight') ||
+                 output.includes('Oppenheimer');
+        metric: correct-rating-results
+
+
+  - description: Multi-criteria filter — genre + rating
+    vars:
+      message: "Horror movies rated above 7"
+    assert:
+      - type: regex
+        value: '\[.+\]\(movie:\d+\)'
+        metric: contains-movie-link
+      - type: not-contains
+        value: "The Witch"
+      - type: not-contains
+        value: "Annihilation"
+      - type: javascript
+        value: |
+          const valid = ['Hereditary', 'Get Out', 'A Quiet Place', 'The Lighthouse'];
+          return valid.some(f => output.includes(f));
+        metric: multi-criteria-correct
+
+  - description: Cast lookup
+    vars:
+      message: "Films with Tom Hardy"
+    assert:
+      - type: regex
+        value: '\[.+\]\(movie:\d+\)'
+        metric: contains-movie-link
+      - type: javascript
+        value: output.includes('Dark Knight') || output.includes('Mad Max')
+        metric: cast-lookup-correct
+
+
+  # Regression: search_movies had no title filter, so named films were reported as "not in the catalogue"
+  - description: Title lookup — film named directly
+    vars:
+      message: "Tell me about Parasite"
+    assert:
+      - type: regex
+        value: '\[Parasite\]\(movie:3\)'
+        metric: title-lookup-links-correct-id
+      - type: not-icontains
+        value: "not in the catalogue"
+        metric: title-lookup-found
+      - type: llm-rubric
+        value: >
+          The response describes the film Parasite using catalogue details (such as
+          Bong Joon-ho as director or its 2019 release) and does not say it is missing.
+        metric: title-lookup-grounded
+
+  - description: Title lookup — lowercase, no punctuation
+    vars:
+      message: "whiplash?"
+    assert:
+      - type: regex
+        value: '\[Whiplash\]\(movie:9\)'
+        metric: title-lookup-links-correct-id
+      - type: not-icontains
+        value: "not in the catalogue"
+        metric: title-lookup-found
+
+  - description: Title lookup — partial title
+    vars:
+      message: "Do you have the one called Everything Everywhere?"
+    assert:
+      - type: regex
+        value: '\[Everything Everywhere All at Once\]\(movie:6\)'
+        metric: title-lookup-links-correct-id
+
+  - description: Title lookup — film not in the catalogue gets no link
+    vars:
+      message: "Tell me about Titanic"
+    assert:
+      - type: not-regex
+        value: '\[Titanic\]\('
+        metric: no-fabricated-link
+      - type: llm-rubric
+        value: >
+          The response says Titanic is not in the catalogue (it may offer alternatives)
+          and does not describe the film's plot, cast or rating from memory.
+        metric: missing-title-handled
