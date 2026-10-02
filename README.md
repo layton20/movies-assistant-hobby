@@ -4,4 +4,6 @@ A small movie-finder with a React + TypeScript UI and an ASP.NET Core API. OpenR
 
 The flow: the UI posts to `/chat`, the API validates the request and checks the latest user turn with Jev, then sends the conversation to the model. The model can call the movie tools, and the API streams its final reply back to the UI. Promptfoo evals in `evals/` cover search, recommendations, grounding, validation, and injection.
 
+<img width="1016" height="677" alt="image" src="https://github.com/user-attachments/assets/b9ee536f-2cfd-4478-8d59-9180901a4fad" />
+
 For local dev, set `OpenRouter:ApiKey` with `dotnet user-secrets set "OpenRouter:ApiKey" "<your-key>"` from `MovieAssistant.Api/`, then run `dotnet run`. In another terminal, run `npm install` and `npm run dev` from `movies-assistant-ui/`. Run evals with `npx promptfoo eval --no-cache` from `evals/`.
